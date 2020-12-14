@@ -1,0 +1,18 @@
+name: AWS Credentials Rotation
+description: Rotates AWS Credentials in Secrets
+inputs:
+  GITHUB_TOKEN: 
+    description: 'Github Access Token'
+    required: true
+  ACCESS_KEY_ID_SECRET_NAME:
+    description: 'Name of the Github Secret that holds the ACCESS_KEY_ID to rotate'
+    required: true
+  SECRET_ACCESS_KEY_SECRET_NAME:
+    description: 'Name of the Github Secret that holds the SECRET_ACCESS_KEY to rotate'
+    required: true
+  IAM_USER_USERNAME:
+    description: 'Username of the IAM User to rotate credentials for'
+    required: false
+runs:
+  using: node12
+  main: dist/index.js
