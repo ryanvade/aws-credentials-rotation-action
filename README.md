@@ -38,7 +38,7 @@ The name of the IAM User whose credentials are being rotated.
     aws-region: us-east-1
 
 - name: Rotate Credentials
-  uses: ryanvade/aws-credentials-rotation-action@v1
+  uses: ryanvade/aws-credentials-rotation-action@v1.0.1
   with:
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     ACCESS_KEY_ID_SECRET_NAME: "AWS_ACCESS_KEY_ID"
@@ -56,7 +56,7 @@ The name of the IAM User whose credentials are being rotated.
     aws-region: us-east-1
 
 - name: Rotate Credentials
-  uses: ryanvade/aws-credentials-rotation-action@v1
+  uses: ryanvade/aws-credentials-rotation-action@v1.0.1
   with:
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     ACCESS_KEY_ID_SECRET_NAME: "AWS_ACCESS_KEY_ID"
